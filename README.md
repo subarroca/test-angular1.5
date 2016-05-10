@@ -1,4 +1,4 @@
-# test-angular2
+# test-angular1.5
 Basic project to compare multiple frameworks
 
 ## Wanted functionality
