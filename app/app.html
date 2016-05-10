@@ -1,3 +1,11 @@
+<h1>{{ 'app.welcome' | translate:{name: $ctrl.name} }}</h1>
+
+<div>
+	<a ng-click="$ctrl.setLang('ca')">ca</a>
+	<a ng-click="$ctrl.setLang('es')">es</a>
+	<a ng-click="$ctrl.setLang('en')">en</a>
+</div>
+
 <nav>
   <a ng-link="['About']">About</a>
   <a ng-link="['Cities']">Cities</a>
