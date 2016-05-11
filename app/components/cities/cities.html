@@ -1,5 +1,29 @@
+<button
+	ng-click="$ctrl.changeStyle()">
+		Change Style
+</button>
+
 <ul>
-	<li ng-repeat="city in $ctrl.cities">
-		<a ng-link="['City', {id: city.id}]">{{city.content}}</a>
+	<li
+		ng-repeat="city in $ctrl.cities">
+
+		<a
+			ng-link="['City', {id: city.id}]"
+			ng-style="{
+				background: $ctrl.currentColor
+			}"
+			class="label">
+			{{city.content}}
+		</a>
+		
+		<input
+			type="text"
+			ng-model="city.content"
+			ng-change="$ctrl.onInputChanged()">
+		
+		<input
+			type="text"
+			ng-model="city.id"
+			ng-change="$ctrl.onInputChanged()">
 	</li>
 </ul>

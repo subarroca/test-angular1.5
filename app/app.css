@@ -9,3 +9,8 @@ input.ng-invalid{
 .alert{
   color: red;
 }
+
+.label{
+	width: 200px;
+	display: inline-block;
+}
