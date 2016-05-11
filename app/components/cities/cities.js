@@ -31,8 +31,6 @@ function CitiesController( StatsFactory ) {
 			$ctrl.cities = data.fitxes.v;
 			console.timeEnd('loadCities');
 
-			console.log(data.fitxes.v[0]);
-
 			setTimeout(
 				function(){
 					console.timeEnd('renderCities');
